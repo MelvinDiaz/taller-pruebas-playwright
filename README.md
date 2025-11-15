@@ -2,7 +2,66 @@
 
 Este proyecto contiene pruebas automatizadas con Playwright para el sitio de pruebas [Swag Labs](https://www.saucedemo.com).
 
-## 📋 Requisitos
+## 🎯 Objetivo
+
+Proyecto profesional de automatización end-to-end usando:
+
+- Playwright
+- TypeScript
+- Page Object Model (POM)
+- GitHub Actions (CI/CD)
+
+## � Estructura
+
+```
+/pages/
+   LoginPage.ts
+   ProductsPage.ts
+/tests/
+   login.spec.ts
+playwright.config.ts
+package.json
+/.github/workflows/ci.yml
+```
+
+## 🚀 Instalación
+
+```bash
+npm install
+```
+
+## ▶️ Ejecución de pruebas
+
+```bash
+npm test
+```
+
+## 📊 Ver reportes
+
+```bash
+npm run report
+```
+
+## 🧩 Page Object Model (POM)
+
+- **LoginPage.ts**: Encapsula la lógica y selectores de login.
+- **ProductsPage.ts**: Encapsula la lógica y validación de la página de productos.
+- Los tests usan estas clases para mayor mantenibilidad y reutilización.
+
+## 🔄 CI/CD con GitHub Actions
+
+- El pipeline (`.github/workflows/ci.yml`) ejecuta las pruebas automáticamente en cada push o pull request a `main` o `master`.
+- Instala dependencias, Playwright y ejecuta los tests.
+- Muestra resultados en la pestaña Actions de GitHub.
+
+## 📝 ¿Cómo funciona?
+
+- El test `login.spec.ts` usa el POM para hacer login y validar el texto "Products".
+- La configuración de Playwright (`playwright.config.ts`) define retries, headless, screenshots y videos solo en fallos.
+
+---
+
+¡Listo para usar y escalar en proyectos reales!
 
 - Node.js 18+
 - npm o yarn
