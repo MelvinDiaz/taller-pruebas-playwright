@@ -5,7 +5,7 @@ export class LoginPage {
   readonly usernameInput = '[data-test="username"]';
   readonly passwordInput = '[data-test="password"]';
   readonly loginButton = '[data-test="login-button"]';
-  readonly url = "https://www.saucedemo.com/v1/index.html";
+  readonly url = "https://www.saucedemo.com";
 
   constructor(page: Page) {
     this.page = page;

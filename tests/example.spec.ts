@@ -31,7 +31,7 @@ test("Agregar producto al carrito", async ({ page }) => {
 
   // Verificar que el botón cambió a "Remove"
   await expect(
-    page.locator('[data-test="add-to-cart-sauce-labs-backpack"]')
+    page.locator('[data-test="remove-sauce-labs-backpack"]')
   ).toContainText("Remove");
 
   // Verificar el badge del carrito

@@ -2,7 +2,7 @@ import { Page, expect } from "@playwright/test";
 
 export class ProductsPage {
   readonly page: Page;
-  readonly title = ".product_label";
+  readonly title = ".title";
 
   constructor(page: Page) {
     this.page = page;
